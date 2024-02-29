@@ -1,0 +1,92 @@
+[
+    {
+        "id": "P-001",
+        "name": "Pingpongtafel",
+        "description": "Een pingpongtafel van zeer goede kwaliteit ontworpen voor alle spelers.",
+        "lifespan": 10,
+        "inStock": true,
+        "producedOn": "2023-12-05",
+        "imageUrl": "",
+        "color": "Blauw",
+        "aproved": ["competitie", "training", "thuis"],
+        "characteristics": {
+            "id": "C-001",
+            "Material": "Hout/composiet tafelblad, metalen frame",
+            "Weight": 160,
+            "amountInStock": 25,
+            "price": 499
+        }
+    },
+    {
+        "id": "P-002",
+        "name": "Houtje",
+        "description": "Een houtje van hoogwaardige kwaliteit voor het samenstellen van je eigen palletje",
+        "lifespan": 2,
+        "inStock": true,
+        "producedOn": "2023-12-02",
+        "imageUrl": "",
+        "color": "Beige",
+        "aproved": ["competitie", "training", "thuis"],
+        "characteristics": {
+            "id": "C-002",
+            "Material": "Hoogwaardig houtcomposiet",
+            "Weight": 0.3,
+            "amountInStock": 110,
+            "price": 35
+        }
+    },
+    {
+        "id": "P-003",
+        "name": "Scorebord",
+        "description": "Een scorebord voor het tellen van de punten tijdens een match",
+        "lifespan": 15,
+        "inStock": true,
+        "producedOn": "2023-12-20",
+        "imageUrl": "",
+        "color": "Blauw",
+        "aproved": ["competitie"],
+        "characteristics": {
+            "id": "C-003",
+            "Material": "Duurzaam kunststof",
+            "Weight": 1,
+            "amountInStock": 75,
+            "price": 200
+        }
+    },
+    {
+        "id": "P-004",
+        "name": "Balletjes",
+        "description": "Een doos van 20 pingpongballen",
+        "lifespan": 1,
+        "inStock": true,
+        "producedOn": "2024-01-05",
+        "imageUrl": "",
+        "color": "Wit",
+        "aproved": ["competitie", "training", "thuis"],
+        "characteristics": {
+            "id": "C-004",
+            "Material": "Kunststof",
+            "Weight": 0.1,
+            "amountInStock": 400,
+            "price": 9
+        }
+    },
+    {
+        "id": "P-005",
+        "name": "Balnetje",
+        "description": "Een balnetje handig voor het rapen van balletjes",
+        "lifespan": 5,
+        "inStock": false,
+        "producedOn": "2024-01-20",
+        "imageUrl": "",
+        "color": "zwart",
+        "aproved": ["training"],
+        "characteristics": {
+            "id": "C-005",
+            "Material": "nylon",
+            "Weight": 1,
+            "amountInStock": 0,
+            "price": 25
+        }
+    }
+]
