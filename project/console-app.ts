@@ -1,14 +1,10 @@
 import * as readline from 'readline-sync';
-import * as fs from 'fs';
 import { Product } from "./interface";
 
-let menu: string[] = [" View all data", " Filter by ID", " Exit"];
-let stopProgram: boolean = true;
-
-function loadProducts(): Product[] {
+async function loadProducts(): Promise<Product[]> {
     try {
-        const loadProduct = fs.readFileSync("products.json", "utf8");
-        const products: Product[] = JSON.parse(loadProduct);
+        const loadProduct = await fetch("https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/products.json");
+        const products = await loadProduct.json();;
         return products;
     } catch (error) {
         console.error("Can't read products.json:")
@@ -16,54 +12,50 @@ function loadProducts(): Product[] {
     }
 }
 
-function filterById(id: string): Product | null {
-    const products: Product[] = loadProducts();
-    for (let i = 0; i < products.length; i++) {
-        if (products[i].id === id) {
-            return products[i];
-        }
-    }
-    return null;
-}
-
-do {
-    console.log(`Welcome to the JSON data viewer!\n`);
-    menu.forEach((option, index) => console.log(`${index + 1}. ${option}`));
-
-    let question = readline.question(`\nPlease enter your choice: `)
-    let choice: number = parseInt(question);
-    console.log();
-    if (choice == 1) {
-        const productNameAndId: Product[] = loadProducts();
-        for (let i = 0; i < productNameAndId.length; i++) {
-            const productList = productNameAndId[i];
-            console.log(`- ${productList.name} (${productList.id})`);
-        }
+async function consoleApp() {
+    let allProducts: Product[] = await loadProducts();
+    let menu: string[] = [" View all data", " Filter by ID", " Exit"];
+    let stopProgram: boolean = true;
+    do {
+        console.log(`Welcome to the JSON data viewer!\n`);
+        let choice : number = readline.keyInSelect(menu, "Please enter your choice: ", {cancel: false});
         console.log();
-    }
-    if (choice === 2) {
-        const id: string = readline.question("Please enter the ID you want to filter by: ");
-        const filteredProduct: Product | null = filterById(id);
-        if (filteredProduct) {
-            console.log(`- ${filteredProduct.name} (${filteredProduct.id})`);
-            console.log(`  - Description: ${filteredProduct.description}`);
-            console.log(`  - Lifespan: ${filteredProduct.lifespan}`);
-            console.log(`  - In Stock: ${filteredProduct.inStock}`);
-            console.log(`  - Produced On: ${filteredProduct.producedOn}`);
-            console.log(`  - Image URL: ${filteredProduct.imageUrl}`);
-            console.log(`  - Color: ${filteredProduct.color}`);
-            console.log(`  - Approved: ${filteredProduct.approved}`);
-            console.log(`  - Characteristics:`);
-            console.log(`    - ID: ${filteredProduct.characteristics.id}`);
-            console.log(`    - Material: ${filteredProduct.characteristics.Material}`);
-            console.log(`    - Weight: ${filteredProduct.characteristics.Weight}`);
-            console.log(`    - Amount in Stock: ${filteredProduct.characteristics.amountInStock}`);
-            console.log(`    - Price: ${filteredProduct.characteristics.price}`);
-        } else {
-            console.log(`No product found with ID ${id}`);
+        if (choice == 0) {
+            for (let i = 0; i < allProducts.length; i++) {
+                const productList = allProducts[i];
+                console.log(`- ${productList.name} (${productList.id})`);
+            }
+            console.log();
         }
-    }
-    if (choice == 3) {
-        stopProgram = false;
-    }
-} while (stopProgram);
+        if (choice === 1) {
+            const id: string = readline.question("Please enter the ID you want to filter by: ");
+            const filterList: Product[] = allProducts.filter((element) => element.id == id);
+            const filter: Product = filterList[0];
+                if (filter) {
+                console.log();
+                console.log(`- ${filter.name} (${filter.id})`);
+                console.log(`- Description: ${filter.description}`);
+                console.log(`- Lifespan: ${filter.lifespan}`);
+                console.log(`- In stock: ${filter.inStock}`);
+                console.log(`- Produced on: ${filter.producedOn}`);
+                console.log(`- Image URL: ${filter.imageUrl}`);
+                console.log(`- Color: ${filter.color}`);
+                console.log(`- Approved: ${filter.approved}`);
+                console.log(`- Characteristics:`);
+                console.log(`    - ID: ${filter.characteristics.id}`);
+                console.log(`    - Material: ${filter.characteristics.Material}`);
+                console.log(`    - Weight: ${filter.characteristics.Weight}`);
+                console.log(`    - Amount in stock: ${filter.characteristics.amountInStock}`);
+                console.log(`    - Price: ${filter.characteristics.price}`);
+                console.log();
+            } else {
+                console.log(`No product found with this Id!`);
+            }
+        }
+        if (choice == 2) {
+            stopProgram = false;
+        }
+    } while (stopProgram);
+}
+consoleApp();
+
