@@ -96,7 +96,7 @@
         "lifespan": 2,
         "inStock": true,
         "producedOn": "2024-02-20",
-        "imageUrl": "",
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/t-shirt.jpg?raw=true",
         "color": "Red",
         "approved": ["training", "competition"],
         "characteristics": {
@@ -114,7 +114,7 @@
         "lifespan": 3,
         "inStock": false,
         "producedOn": "2024-02-16",
-        "imageUrl": "",
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/sportzak.jpg?raw=true",
         "color": "Black",
         "approved": ["training", "competition"],
         "characteristics": {
@@ -132,7 +132,7 @@
         "lifespan": 6,
         "inStock": true,
         "producedOn": "2024-02-19",
-        "imageUrl": "",
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/case.jpg?raw=true",
         "color": "Blue",
         "approved": ["training", "competition", "home"],
         "characteristics": {
@@ -150,7 +150,7 @@
         "lifespan": 2,
         "inStock": true,
         "producedOn": "2024-01-16",
-        "imageUrl": "",
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/rubbers.jpg?raw=true",
         "color": "Red",
         "approved": ["training", "competition", "home"],
         "characteristics": {
@@ -168,7 +168,7 @@
         "lifespan": 4,
         "inStock": false,
         "producedOn": "2023-01-16",
-        "imageUrl": "",
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/net.jpg?raw=true",
         "color": "Black",
         "approved": ["training", "competition", "home"],
         "characteristics": {

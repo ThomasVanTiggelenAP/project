@@ -13,13 +13,16 @@ async function loadProducts(): Promise<Product[]> {
 }
 
 async function consoleApp() {
+
     let allProducts: Product[] = await loadProducts();
     let menu: string[] = [" View all data", " Filter by ID", " Exit"];
     let stopProgram: boolean = true;
+
     do {
         console.log(`Welcome to the JSON data viewer!\n`);
         let choice : number = readline.keyInSelect(menu, "Please enter your choice: ", {cancel: false});
         console.log();
+
         if (choice == 0) {
             for (let i = 0; i < allProducts.length; i++) {
                 const productList = allProducts[i];
@@ -27,6 +30,7 @@ async function consoleApp() {
             }
             console.log();
         }
+
         if (choice === 1) {
             const id: string = readline.question("Please enter the ID you want to filter by: ");
             const filterList: Product[] = allProducts.filter((element) => element.id == id);
@@ -51,10 +55,12 @@ async function consoleApp() {
             } else {
                 console.log(`No product found with this Id!`);
             }
+
         }
         if (choice == 2) {
             stopProgram = false;
         }
+        
     } while (stopProgram);
 }
 consoleApp();
