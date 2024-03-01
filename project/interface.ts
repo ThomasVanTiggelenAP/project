@@ -1,4 +1,4 @@
-interface PingPongTable {
+export interface Product {
     id: string;
     name: string;
     description: string;
@@ -8,10 +8,13 @@ interface PingPongTable {
     imageUrl: string;
     color: string;
     approved: string[];
-    characteristics: {
-        id: string;
-        Material: string;
-        Weight: number;
-        amountInStock: number;
-    };
+    characteristics: Characteristics;
+}
+
+export interface Characteristics {
+    id: string;
+    Material: string;
+    Weight: number;
+    amountInStock: number;
+    price: number;
 }

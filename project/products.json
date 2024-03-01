@@ -1,17 +1,17 @@
 [
     {
         "id": "P-001",
-        "name": "Pingpongtafel",
-        "description": "Een pingpongtafel van zeer goede kwaliteit ontworpen voor alle spelers.",
+        "name": "Ping Pong Table",
+        "description": "A high-quality ping pong table designed for all players.",
         "lifespan": 10,
         "inStock": true,
         "producedOn": "2023-12-05",
-        "imageUrl": "",
-        "color": "Blauw",
-        "aproved": ["competitie", "training", "thuis"],
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/pingpongtafel.jpeg?raw=true",
+        "color": "Blue",
+        "approved": ["competition", "training", "home"],
         "characteristics": {
             "id": "C-001",
-            "Material": "Hout/composiet tafelblad, metalen frame",
+            "Material": "Wood/composite tabletop, metal frame",
             "Weight": 160,
             "amountInStock": 25,
             "price": 499
@@ -19,17 +19,17 @@
     },
     {
         "id": "P-002",
-        "name": "Houtje",
-        "description": "Een houtje van hoogwaardige kwaliteit voor het samenstellen van je eigen palletje",
+        "name": "Paddle",
+        "description": "A high-quality paddle for assembling your own paddle.",
         "lifespan": 2,
         "inStock": true,
         "producedOn": "2023-12-02",
-        "imageUrl": "",
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/houtje.jpeg?raw=true",
         "color": "Beige",
-        "aproved": ["competitie", "training", "thuis"],
+        "approved": ["competition", "training", "home"],
         "characteristics": {
             "id": "C-002",
-            "Material": "Hoogwaardig houtcomposiet",
+            "Material": "High-quality wood composite",
             "Weight": 0.3,
             "amountInStock": 110,
             "price": 35
@@ -37,17 +37,17 @@
     },
     {
         "id": "P-003",
-        "name": "Scorebord",
-        "description": "Een scorebord voor het tellen van de punten tijdens een match",
+        "name": "Scoreboard",
+        "description": "A scoreboard for counting points during a match.",
         "lifespan": 15,
         "inStock": true,
         "producedOn": "2023-12-20",
-        "imageUrl": "",
-        "color": "Blauw",
-        "aproved": ["competitie"],
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/scorebord.jpeg?raw=true",
+        "color": "Blue",
+        "approved": ["competition"],
         "characteristics": {
             "id": "C-003",
-            "Material": "Duurzaam kunststof",
+            "Material": "Durable plastic",
             "Weight": 1,
             "amountInStock": 75,
             "price": 200
@@ -55,17 +55,17 @@
     },
     {
         "id": "P-004",
-        "name": "Balletjes",
-        "description": "Een doos van 20 pingpongballen",
+        "name": "Balls",
+        "description": "A box of 20 ping pong balls.",
         "lifespan": 1,
         "inStock": true,
         "producedOn": "2024-01-05",
-        "imageUrl": "",
-        "color": "Wit",
-        "aproved": ["competitie", "training", "thuis"],
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/balletjes.jpeg?raw=true",
+        "color": "White",
+        "approved": ["competition", "training", "home"],
         "characteristics": {
             "id": "C-004",
-            "Material": "Kunststof",
+            "Material": "Plastic",
             "Weight": 0.1,
             "amountInStock": 400,
             "price": 9
@@ -73,20 +73,110 @@
     },
     {
         "id": "P-005",
-        "name": "Balnetje",
-        "description": "Een balnetje handig voor het rapen van balletjes",
+        "name": "Ball Net",
+        "description": "A ball net handy for picking up balls.",
         "lifespan": 5,
         "inStock": false,
         "producedOn": "2024-01-20",
-        "imageUrl": "",
-        "color": "zwart",
-        "aproved": ["training"],
+        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/balnetje.jpeg?raw=true",
+        "color": "Black",
+        "approved": ["training"],
         "characteristics": {
             "id": "C-005",
-            "Material": "nylon",
+            "Material": "Nylon",
             "Weight": 1,
             "amountInStock": 0,
             "price": 25
+        }
+    },
+    {
+        "id": "P-006",
+        "name": "T-shirt",
+        "description": "A ping pong shirt with ventilation to prevent sweat.",
+        "lifespan": 2,
+        "inStock": true,
+        "producedOn": "2024-02-20",
+        "imageUrl": "",
+        "color": "Red",
+        "approved": ["training", "competition"],
+        "characteristics": {
+            "id": "C-006",
+            "Material": "Cotton",
+            "Weight": 0.1,
+            "amountInStock": 150,
+            "price": 35
+        }
+    },
+    {
+        "id": "P-007",
+        "name": "Sports Bag",
+        "description": "A sports bag for carrying all your equipment.",
+        "lifespan": 3,
+        "inStock": false,
+        "producedOn": "2024-02-16",
+        "imageUrl": "",
+        "color": "Black",
+        "approved": ["training", "competition"],
+        "characteristics": {
+            "id": "C-007",
+            "Material": "Polyester",
+            "Weight": 1.5,
+            "amountInStock": 0,
+            "price": 45
+        }
+    },
+    {
+        "id": "P-008",
+        "name": "Case",
+        "description": "A case for storing your paddle.",
+        "lifespan": 6,
+        "inStock": true,
+        "producedOn": "2024-02-19",
+        "imageUrl": "",
+        "color": "Blue",
+        "approved": ["training", "competition", "home"],
+        "characteristics": {
+            "id": "C-008",
+            "Material": "Metal",
+            "Weight": 0.8,
+            "amountInStock": 15,
+            "price": 50
+        }
+    },
+    {
+        "id": "P-009",
+        "name": "Rubbers",
+        "description": "2 rubbers to attach to your paddle.",
+        "lifespan": 2,
+        "inStock": true,
+        "producedOn": "2024-01-16",
+        "imageUrl": "",
+        "color": "Red",
+        "approved": ["training", "competition", "home"],
+        "characteristics": {
+            "id": "C-009",
+            "Material": "Rubber",
+            "Weight": 0.2,
+            "amountInStock": 98,
+            "price": 40
+        }
+    },
+    {
+        "id": "P-010",
+        "name": "Net",
+        "description": "A net suitable for any ping pong table.",
+        "lifespan": 4,
+        "inStock": false,
+        "producedOn": "2023-01-16",
+        "imageUrl": "",
+        "color": "Black",
+        "approved": ["training", "competition", "home"],
+        "characteristics": {
+            "id": "C-010",
+            "Material": "Nylon",
+            "Weight": 0.7,
+            "amountInStock": 0,
+            "price": 70
         }
     }
 ]

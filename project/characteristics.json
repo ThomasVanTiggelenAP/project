@@ -1,8 +1,72 @@
 [
     {
-    "id": "C-001",
-    "Material": "Hout/composiet tafelblad, metalen frame",
-    "Weight": 160,
-    "amountInStock": 25
+        "id": "C-001",
+        "Material": "Wood/composite tabletop, metal frame",
+        "Weight": 160,
+        "amountInStock": 25
+    },
+    {
+        "id": "C-002",
+        "Material": "High-quality wood composite",
+        "Weight": 0.3,
+        "amountInStock": 110,
+        "price": 35
+    },
+    {
+        "id": "C-003",
+        "Material": "Durable plastic",
+        "Weight": 1,
+        "amountInStock": 75,
+        "price": 200
+    },
+    {
+        "id": "C-004",
+        "Material": "Plastic",
+        "Weight": 0.1,
+        "amountInStock": 400,
+        "price": 9
+    },
+    {
+        "id": "C-005",
+        "Material": "Nylon",
+        "Weight": 1,
+        "amountInStock": 0,
+        "price": 25
+    },
+    {
+        "id": "C-006",
+        "Material": "Cotton",
+        "Weight": 0.1,
+        "amountInStock": 150,
+        "price": 35
+    },
+    {
+        "id": "C-007",
+        "Material": "Polyester",
+        "Weight": 1.5,
+        "amountInStock": 0,
+        "price": 45
+    },
+    {
+        "id": "C-008",
+        "Material": "Metal",
+        "Weight": 0.8,
+        "amountInStock": 15,
+        "price": 50
+    },
+    {
+        "id": "C-009",
+        "Material": "Rubber",
+        "Weight": 0.2,
+        "amountInStock": 98,
+        "price": 40
+    },
+    {
+        "id": "C-010",
+        "Material": "Nylon",
+        "Weight": 0.7,
+        "amountInStock": 0,
+        "price": 70
     }
+    
 ]
