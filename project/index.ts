@@ -86,6 +86,9 @@ app.get('/', async (req, res) => {
         if (sortField === 'inStock') {
             allProducts = sortProductsByStock(allProducts, sortDirection === 'asc');
         }
+        if (sortField === 'price') {
+            allProducts = sortProductsByPrice(allProducts, sortDirection === 'asc');
+        }
         res.render('index', { products: allProducts, sortField, sortDirection, filterName });
     } catch (error) {
         console.error("Error loading products:", error);

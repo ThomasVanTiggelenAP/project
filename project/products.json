@@ -6,7 +6,7 @@
         "lifespan": 10,
         "inStock": true,
         "producedOn": "2023-12-05",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/pingpongtafel.jpeg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/pingpongtafel.jpeg",
         "color": "Blue",
         "approved": [
             "competition",
@@ -28,7 +28,7 @@
         "lifespan": 2,
         "inStock": true,
         "producedOn": "2023-12-02",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/houtje.jpeg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/houtje.jpeg",
         "color": "Beige",
         "approved": [
             "competition",
@@ -50,7 +50,7 @@
         "lifespan": 15,
         "inStock": true,
         "producedOn": "2023-12-20",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/scorebord.jpeg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/scorebord.jpeg",
         "color": "Blue",
         "approved": [
             "competition"
@@ -70,7 +70,7 @@
         "lifespan": 1,
         "inStock": true,
         "producedOn": "2024-01-05",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/balletjes.jpeg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/balletjes.jpeg",
         "color": "White",
         "approved": [
             "competition",
@@ -92,7 +92,7 @@
         "lifespan": 5,
         "inStock": false,
         "producedOn": "2024-01-20",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/balnetje.jpeg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/balnetje.jpeg",
         "color": "Black",
         "approved": [
             "training"
@@ -112,7 +112,7 @@
         "lifespan": 2,
         "inStock": true,
         "producedOn": "2024-02-20",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/t-shirt.jpg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/t-shirt.jpg",
         "color": "Red",
         "approved": [
             "training",
@@ -133,7 +133,7 @@
         "lifespan": 3,
         "inStock": false,
         "producedOn": "2024-02-16",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/sportzak.jpg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/sportzak.jpg",
         "color": "Black",
         "approved": [
             "training",
@@ -154,7 +154,7 @@
         "lifespan": 6,
         "inStock": true,
         "producedOn": "2024-02-19",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/case.jpg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/case.jpg",
         "color": "Blue",
         "approved": [
             "training",
@@ -176,7 +176,7 @@
         "lifespan": 2,
         "inStock": true,
         "producedOn": "2024-01-16",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/rubbers.jpg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/rubbers.jpg",
         "color": "Red",
         "approved": [
             "training",
@@ -198,7 +198,7 @@
         "lifespan": 4,
         "inStock": false,
         "producedOn": "2023-01-16",
-        "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/net.jpg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/ThomasVanTiggelenAP/project/main/project/public/assets/images/net.jpg",
         "color": "Black",
         "approved": [
             "training",

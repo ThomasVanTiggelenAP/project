@@ -52,7 +52,12 @@
                               In Stock <%= sortField==='inStock' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
                             </a>
                           </th>
-                          <th>Price</th>
+                          <th>
+                            <a href="?sortField=price&sortDirection=<%= sortField === 'price' && sortDirection === 'asc' ? 'desc' : 'asc' %>"
+                              style="text-decoration: none; color: inherit;">
+                              Price <%= sortField==='price' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
+                            </a>
+                          </th>
                           <th>Details</th>
                         </tr>
                       </thead>
@@ -76,7 +81,7 @@
                                   <% } %>
                             </td>
                             <td>
-                              <%= product.characteristics.price %>
+                              € <%= product.characteristics.price %>,99
                             </td>
                             <td>
                               <a href="/product/details/<%= product.id %>">
