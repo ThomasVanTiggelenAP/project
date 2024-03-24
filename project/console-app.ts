@@ -47,8 +47,8 @@ async function consoleApp() {
                 console.log(`- Approved: ${filter.approved}`);
                 console.log(`- Characteristics:`);
                 console.log(`    - ID: ${filter.characteristics.id}`);
-                console.log(`    - Material: ${filter.characteristics.Material}`);
-                console.log(`    - Weight: ${filter.characteristics.Weight}`);
+                console.log(`    - Material: ${filter.characteristics.material}`);
+                console.log(`    - Weight: ${filter.characteristics.weight}`);
                 console.log(`    - Amount in stock: ${filter.characteristics.amountInStock}`);
                 console.log(`    - Price: ${filter.characteristics.price}`);
                 console.log();

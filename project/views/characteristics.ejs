@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+<h1 class="text-center ctext-danger mt-5">Characteristics menu</h1>
+<section class="container">
+    <section class="mt-5 row row-cols-1 row-cols-md-2 g-4">
+        <% products.forEach(product => { %>
+        <section class="col">
+            <article class="card h-100">
+                <section class="card-body d-flex justify-content-evenly align-items-center">
+                    <h5 class="card-title m-0">Characteristics ID: <%= product.characteristics.id %></h5>
+                    <a href="/characteristics/<%= product.id %>" class="btn btn-primary">Characteristics</a>
+                </section>
+            </article>
+        </section>
+        <% }); %>
+    </section>
+</section>
+<%- include("partials/footer") %>

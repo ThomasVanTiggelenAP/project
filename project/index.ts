@@ -1,5 +1,4 @@
 import express from "express";
-import * as fs from 'fs';
 import { Product } from "./interface";
 
 const app = express();
@@ -12,9 +11,9 @@ async function loadProducts(): Promise<Product[]> {
         allProducts = await loadProduct.json();;
         return allProducts;
     } catch (error) {
-        console.error("Can't read products.json:")
+        console.error("Cannot read products.json!")
         return [];
-    }
+    };
 }
 
 function sortProductsById(products: Product[], ascending: boolean): Product[] {
@@ -56,15 +55,9 @@ function sortProductsByPrice(products: Product[], ascending: boolean): Product[]
 }
 
 app.set("port", 3000);
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-app.use(express.static("public"));
-
-app.set('layout', './layouts/main');
 app.set("view engine", "ejs");
 
+app.use(express.static("public"));
 
 app.get('/', async (req, res) => {
     try {
@@ -90,9 +83,8 @@ app.get('/', async (req, res) => {
             allProducts = sortProductsByPrice(allProducts, sortDirection === 'asc');
         }
         res.render('index', { products: allProducts, sortField, sortDirection, filterName });
-    } catch (error) {
-        console.error("Error loading products:", error);
-        res.status(500).send("Error loading products");
+    } catch (error : any) {
+        console.log(error.message);
     }
 });
 
@@ -106,9 +98,32 @@ app.get('/product/details/:id', async (req, res) => {
         } else {
             res.status(404).send('Product not found');
         }
-    } catch (error) {
-        console.error("Error fetching product details:", error);
-        res.status(500).send("Error fetching product details");
+    } catch (error : any) {
+        console.log(error.message);
+    }
+});
+
+app.get('/characteristics', async (req, res) => {
+    try {
+        let allProducts: Product[] = await loadProducts();
+        res.render('characteristics', {products: allProducts });
+    } catch (error : any) {
+        console.log(error.message);
+    }
+});
+
+app.get('/characteristics/:id', async (req, res) => {
+    try {
+        const productId = req.params.id;
+        const product = allProducts.find(product => product.id === productId);
+
+        if (product) {
+            res.render('char-details', { product });
+        }else {
+            res.status(404).send('Product not found');
+        }
+    }catch (error : any) {
+        console.log(error.message);
     }
 });
 

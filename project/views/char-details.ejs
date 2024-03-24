@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+<section class="container py-5">
+    <section class="row justify-content-center">
+        <section class="col-md-6">
+            <article class="card">
+                <section class="card-body">
+                    <h5 class="card-title">Characteristics: (<%= product.name %>)</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">ID: <%= product.characteristics.id %></li>
+                        <li class="list-group-item">Material: <%= product.characteristics.material %></li>
+                        <li class="list-group-item">Weight: <%= product.characteristics.weight %> kg</li>
+                        <li class="list-group-item">Amount in Stock: <%= product.characteristics.amountInStock %></li>
+                        <li class="list-group-item">Price: €<%= product.characteristics.price %>,99</li>
+                    </ul>
+                    <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+                </section>
+            </article>
+        </section>
+    </section>
+</section>
+<%- include("partials/footer") %>
