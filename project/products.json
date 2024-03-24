@@ -8,11 +8,15 @@
         "producedOn": "2023-12-05",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/pingpongtafel.jpeg?raw=true",
         "color": "Blue",
-        "approved": ["competition", "training", "home"],
+        "approved": [
+            "competition",
+            "training",
+            "home"
+        ],
         "characteristics": {
             "id": "C-001",
-            "Material": "Wood/composite tabletop, metal frame",
-            "Weight": 160,
+            "material": "Wood/composite tabletop, metal frame",
+            "weight": 160,
             "amountInStock": 25,
             "price": 499
         }
@@ -26,11 +30,15 @@
         "producedOn": "2023-12-02",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/houtje.jpeg?raw=true",
         "color": "Beige",
-        "approved": ["competition", "training", "home"],
+        "approved": [
+            "competition",
+            "training",
+            "home"
+        ],
         "characteristics": {
             "id": "C-002",
-            "Material": "High-quality wood composite",
-            "Weight": 0.3,
+            "material": "High-quality wood composite",
+            "weight": 0.3,
             "amountInStock": 110,
             "price": 35
         }
@@ -44,11 +52,13 @@
         "producedOn": "2023-12-20",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/scorebord.jpeg?raw=true",
         "color": "Blue",
-        "approved": ["competition"],
+        "approved": [
+            "competition"
+        ],
         "characteristics": {
             "id": "C-003",
-            "Material": "Durable plastic",
-            "Weight": 1,
+            "material": "Durable plastic",
+            "weight": 1,
             "amountInStock": 75,
             "price": 200
         }
@@ -62,11 +72,15 @@
         "producedOn": "2024-01-05",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/balletjes.jpeg?raw=true",
         "color": "White",
-        "approved": ["competition", "training", "home"],
+        "approved": [
+            "competition",
+            "training",
+            "home"
+        ],
         "characteristics": {
             "id": "C-004",
-            "Material": "Plastic",
-            "Weight": 0.1,
+            "material": "Plastic",
+            "weight": 0.1,
             "amountInStock": 400,
             "price": 9
         }
@@ -80,11 +94,13 @@
         "producedOn": "2024-01-20",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/balnetje.jpeg?raw=true",
         "color": "Black",
-        "approved": ["training"],
+        "approved": [
+            "training"
+        ],
         "characteristics": {
             "id": "C-005",
-            "Material": "Nylon",
-            "Weight": 1,
+            "material": "Nylon",
+            "weight": 1,
             "amountInStock": 0,
             "price": 25
         }
@@ -98,11 +114,14 @@
         "producedOn": "2024-02-20",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/t-shirt.jpg?raw=true",
         "color": "Red",
-        "approved": ["training", "competition"],
+        "approved": [
+            "training",
+            "competition"
+        ],
         "characteristics": {
             "id": "C-006",
-            "Material": "Cotton",
-            "Weight": 0.1,
+            "material": "Cotton",
+            "weight": 0.1,
             "amountInStock": 150,
             "price": 35
         }
@@ -116,11 +135,14 @@
         "producedOn": "2024-02-16",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/sportzak.jpg?raw=true",
         "color": "Black",
-        "approved": ["training", "competition"],
+        "approved": [
+            "training",
+            "competition"
+        ],
         "characteristics": {
             "id": "C-007",
-            "Material": "Polyester",
-            "Weight": 1.5,
+            "material": "Polyester",
+            "weight": 1.5,
             "amountInStock": 0,
             "price": 45
         }
@@ -134,11 +156,15 @@
         "producedOn": "2024-02-19",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/case.jpg?raw=true",
         "color": "Blue",
-        "approved": ["training", "competition", "home"],
+        "approved": [
+            "training",
+            "competition",
+            "home"
+        ],
         "characteristics": {
             "id": "C-008",
-            "Material": "Metal",
-            "Weight": 0.8,
+            "material": "Metal",
+            "weight": 0.8,
             "amountInStock": 15,
             "price": 50
         }
@@ -152,11 +178,15 @@
         "producedOn": "2024-01-16",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/rubbers.jpg?raw=true",
         "color": "Red",
-        "approved": ["training", "competition", "home"],
+        "approved": [
+            "training",
+            "competition",
+            "home"
+        ],
         "characteristics": {
             "id": "C-009",
-            "Material": "Rubber",
-            "Weight": 0.2,
+            "material": "Rubber",
+            "weight": 0.2,
             "amountInStock": 98,
             "price": 40
         }
@@ -170,11 +200,15 @@
         "producedOn": "2023-01-16",
         "imageUrl": "https://github.com/ThomasVanTiggelenAP/project/blob/main/project/images/net.jpg?raw=true",
         "color": "Black",
-        "approved": ["training", "competition", "home"],
+        "approved": [
+            "training",
+            "competition",
+            "home"
+        ],
         "characteristics": {
             "id": "C-010",
-            "Material": "Nylon",
-            "Weight": 0.7,
+            "material": "Nylon",
+            "weight": 0.7,
             "amountInStock": 0,
             "price": 70
         }

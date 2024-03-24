@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<div class="container d-flex justify-content-center">
+    <div class="row">    
+        <% products.forEach(product => { %>
+            <div class="">
+                <div class="card">
+                    <div>
+                        <div>
+                            <img src="<%= product.imageUrl %>" height="450rem" alt="<%= product.name %>">
+                        </div>
+                        <div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title border-bottom-1 p-2"><%= product.name %></h5>
+                                <p class="card-text"><%= product.description %></p>
+                                <p class="card-text">Lifespan: <%= product.lifespan %></p>
+                                <p class="card-text">In stock: <%= product.inStock ? 'Yes' : 'No' %></p>
+                                <p class="card-text">Produced on: <%= product.producedOn %></p>
+                                <p class="card-text">Color: <%= product.color %></p>
+                                <p class="card-text">Approved: <%= product.approved %></p>
+                                <a href="/product/<%= product.id %>" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+
+<%- include("partials/footer") %>

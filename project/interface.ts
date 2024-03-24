@@ -13,8 +13,8 @@ export interface Product {
 
 export interface Characteristics {
     id: string;
-    Material: string;
-    Weight: number;
+    material: string;
+    weight: number;
     amountInStock: number;
     price: number;
 }

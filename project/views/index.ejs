@@ -1,0 +1,104 @@
+<%- include("partials/header") %>
+
+
+  <section class="intro">
+    <div class="bg-image h-100"
+      style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/tables/img2.jpg');">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0,.25);">
+        <div class="container">
+          <form class="mb-2" action="/" method="get">
+            <div class="input-group">
+              <label class="input-group-text cbg-secondary ctext-primary" for="filterName">Search:</label>
+              <input type="text" class="form-control" id="filterName" name="filterName" value="<%= filterName %>">
+              <button class="btn btn-outline-secondary cbg-secondary" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#E94F37" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="card bg-dark shadow-2-strong">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-dark table-borderless mb-0 table-hover">
+                      <thead>
+                        <tr>
+                          <th>
+                            <a href="?sortField=id&sortDirection=<%= sortField === 'id' && sortDirection === 'asc' ? 'desc' : 'asc' %>"
+                              style="text-decoration: none; color: inherit;">
+                              ID <%= sortField==='id' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
+                            </a>
+                          </th>
+                          <th>
+                            <a href="?sortField=name&sortDirection=<%= sortField === 'name' && sortDirection === 'asc' ? 'desc' : 'asc' %>"
+                              style="text-decoration: none; color: inherit;">
+                              Name <%= sortField==='name' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
+                            </a>
+                          </th>
+                          <th>
+                            <a href="?sortField=material&sortDirection=<%= sortField === 'material' && sortDirection === 'asc' ? 'desc' : 'asc' %>"
+                              style="text-decoration: none; color: inherit;">
+                              Material <%= sortField==='material' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
+                            </a>
+                          </th>
+                          <th>In Stock</th>
+                          <th>Price</th>
+                          <th>Details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <% products.forEach(product=> { %>
+                          <tr>
+                            <td>
+                              <%= product.id %>
+                            </td>
+                            <td>
+                              <%= product.name %>
+                            </td>
+                            <td>
+                              <%= product.characteristics.material %>
+                            </td>
+                            <td>
+                              <% if (product.inStock) { %>
+                                <span>&#9989;</span>
+                                <% } else { %>
+                                  <span>&#10060;</span>
+                                  <% } %>
+                            </td>
+                            <td>
+                              <%= product.characteristics.price %>
+                            </td>
+                            <td>
+                              <a href="/product/details/<%= product.id %>">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                  <path fill-rule="evenodd"
+                                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                              </a>
+                            </td>
+
+
+                            <% }); %>
+                      </tbody>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include("partials/footer") %>
