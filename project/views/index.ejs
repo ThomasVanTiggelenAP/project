@@ -46,7 +46,12 @@
                               Material <%= sortField==='material' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
                             </a>
                           </th>
-                          <th>In Stock</th>
+                          <th>
+                            <a href="?sortField=inStock&sortDirection=<%= sortField === 'inStock' && sortDirection === 'asc' ? 'desc' : 'asc' %>"
+                              style="text-decoration: none; color: inherit;">
+                              In Stock <%= sortField==='inStock' ? (sortDirection==='asc' ? '▲' : '▼' ) : '' %>
+                            </a>
+                          </th>
                           <th>Price</th>
                           <th>Details</th>
                         </tr>

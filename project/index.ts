@@ -41,6 +41,20 @@ function sortProductsByMaterial(products: Product[], ascending: boolean): Produc
     });
 }
 
+function sortProductsByStock(products: Product[], ascending: boolean): Product[]{
+    return products.sort((a, b) => {
+        return ascending ? (a.inStock ? -1 : 1) : (b.inStock ? -1 : 1);
+    });
+}
+
+function sortProductsByPrice(products: Product[], ascending: boolean): Product[]{
+    return products.sort((a, b) =>{
+        const priceA = a.characteristics.price;
+        const priceB = b.characteristics.price;
+        return ascending ? priceA - priceB : priceB - priceA;
+    });
+}
+
 app.set("port", 3000);
 
 app.use(express.urlencoded({ extended: true }));
@@ -69,6 +83,9 @@ app.get('/', async (req, res) => {
         if (sortField === 'material') {
             allProducts = sortProductsByMaterial(allProducts, sortDirection === 'asc');
         }
+        if (sortField === 'inStock') {
+            allProducts = sortProductsByStock(allProducts, sortDirection === 'asc');
+        }
         res.render('index', { products: allProducts, sortField, sortDirection, filterName });
     } catch (error) {
         console.error("Error loading products:", error);
@@ -82,7 +99,7 @@ app.get('/product/details/:id', async (req, res) => {
         const product = allProducts.find(product => product.id === productId);
 
         if (product) {
-            res.render('details', { products: [product] }); // Opgelet: het is belangrijk om products als een array door te geven, zelfs als het slechts één product is
+            res.render('details', { products: [product] });
         } else {
             res.status(404).send('Product not found');
         }
