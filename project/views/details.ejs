@@ -17,7 +17,13 @@
                                 <p class="card-text">Produced on: <%= product.producedOn %></p>
                                 <p class="card-text">Color: <%= product.color %></p>
                                 <p class="card-text">Approved: <%= product.approved %></p>
-                                <a href="/characteristics/<%= product.id %>" class="btn btn-primary">Characteristics</a>
+                                <p class="card-text">Characteristics:</p>
+                                <ul>
+                                    <li>Material: <%= product.characteristics.material %></li>
+                                    <li>Weight: <%= product.characteristics.weight %></li>
+                                    <li>Amount in Stock: <%= product.characteristics.amountInStock %></li>
+                                </ul>
+                                <a href="/product/edit/<%= product.id %>">Edit</a>
                             </article>
                         </section>
                     </section>

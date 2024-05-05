@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+<main class="d-flex justify-content-center flex-wrap">
+    <h1 class="col-12 text-center">Edit Product</h1>
+    <form  action="/product/edit/<%= product.id %>" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="<%= product.name %>"><br>
+
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description" value="<%= product.description %>"><br>
+
+        <label for="lifespan">Lifespan:</label><br>
+        <input type="text" id="lifespan" name="lifespan" value="<%= product.lifespan %>"><br>
+
+        <label for="characteristics">Characteristics:</label><br>
+        <select name="characteristics" id="characteristics">
+            <% for(const char of characteristics) { %>
+                <option value="<%= char.id %>"><%= char.id %></option>
+            <% } %>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+<%- include("partials/footer") %>
