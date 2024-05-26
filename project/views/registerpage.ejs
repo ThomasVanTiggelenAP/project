@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+
+<main class="container d-flex justify-content-center align-items-center mt-5 w-50" style="min-height: 30vh;">
+<form action="/register" method="post" class="px-4 py-3 col-12 col-md-9 lg-4">
+<fieldset class="mb-3">
+    <label for="registerUsername" class="form-label ctext-white">Username</label>
+    <input type="text" class="form-control" name="registerUsername" id="registerUsername" placeholder="Username"/>
+</fieldset>
+<fieldset class="mb-3">
+    <label for="registerPassword" class="form-label ctext-white">Password</label>
+    <input type="password" class="form-control" name="registerPassword" id="registerPassword" placeholder="Password"/>
+</fieldset>
+<button type="submit" class="btn btn-dark cbg-dark col-3">Register</button>
+<a href="/login" class="btn btn-link ctext-white ms-4 col-3 text-nowrap">Already an account?</a>
+</form>
+</main>
+<%- include("partials/footer") %>

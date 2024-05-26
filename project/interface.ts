@@ -21,3 +21,10 @@ export interface Characteristics {
     amountInStock: number;
     price: number;
 }
+
+export interface User {
+    _id?: ObjectId;
+    userName: string;
+    password: string;
+    role: "ADMIN" | "USER";
+}

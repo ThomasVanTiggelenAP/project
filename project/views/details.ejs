@@ -23,7 +23,9 @@
                                     <li>Weight: <%= product.characteristics.weight %></li>
                                     <li>Amount in Stock: <%= product.characteristics.amountInStock %></li>
                                 </ul>
-                                <a href="/product/edit/<%= product.id %>">Edit</a>
+                                <% if (user && user.role === "ADMIN") { %>
+                                    <a href="/product/edit/<%= product.id %>">Edit</a>
+                                <% } %>
                             </article>
                         </section>
                     </section>

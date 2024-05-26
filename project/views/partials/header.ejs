@@ -10,17 +10,24 @@
 </head>
 <body class="cbg-primary">
     <header class="p-3 cbg-secondary">
-        <section class="container">
-           <article class="d-flex flex-wrap align-items-center justify-content-between">
-                <img class="align-self-start" height="75px" src="/assets/images/fictieflogo.png">
-               <ul class="nav">
+        <article class="d-flex flex-wrap align-items-center justify-content-between">
+            <img class="align-self-start" height="75px" src="/assets/images/fictieflogo.png">
+            <% if (typeof user !== 'undefined' && user) { %>
+                <p class="ctext-primary mt-3 display-6">Welcome to Pingponkk <%= user.userName %></p>
+            <% } %>
+           <ul class="nav">
+            <li>
+                <a href="/" class="nav-link px-2 ctext-primary">Home</a>
+            </li>
+            <li>
+                <a href="/characteristics" class="nav-link px-2 ctext-primary">Characteristics</a>
+            </li>
+            <% if (typeof user !== 'undefined' && user) { %>
                 <li>
-                    <a href="/" class="nav-link px-2 ctext-primary">Home</a>
+                    <a href="/logout" class="nav-link px-2 ctext-primary">Logout</a>
                 </li>
-                <li>
-                    <a href="/characteristics" class="nav-link px-2 ctext-primary">Characteristics</a>
-                </li>
-               </ul>
-           </article>
+            <% } %>
+           </ul>
+       </article>
         </section>
       </header>
